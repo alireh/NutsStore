@@ -229,6 +229,12 @@ C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery-val
 C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.js
 C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.js
 C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.map
+C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\jquery.js
+C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\jquery.min.js
+C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\jquery.min.map
+C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\jquery.slim.js
+C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\jquery.slim.min.js
+C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\jquery.slim.min.map
 C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\jquery\LICENSE.txt
 C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
 C:\Project\NutsStore\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
