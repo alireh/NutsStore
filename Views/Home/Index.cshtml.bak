@@ -27,7 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.7.0-alpha.2/umd/react.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.7.0-alpha.2/umd/react-dom.production.min.js"></script>
     <script src="~/lib/font-awesome/js/all.js"></script>
-    <script src="~/js/main.jsx"></script>
-    <script src="~/js/carousel.jsx"></script>
+    <script src="@Url.Content("~/js/main.jsx")"></script>
+    <script src="@Url.Content("~/js/carousel.jsx")"></script>
 </body>
 </html>
