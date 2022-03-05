@@ -1,0 +1,139 @@
+﻿footer {
+    width: 100%;
+    background-color: #2d2d2d;
+    padding: 20px 0px;
+    height: 150px;
+}
+
+    footer h2 {
+        font-size: 16px;
+        color: #a1a1a1;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+h2 {
+    font-size: 20px;
+    font-family: 'Gothic-Bold';
+    font-weight: normal;
+    position: sticky;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.ft-quick-links {
+    float: left;
+    width: 400px;
+}
+
+    .ft-quick-links ul li {
+        float: left;
+        margin-right: 6px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        list-style: none;
+        padding-right: 5px;
+        padding-top: 20px;
+    }
+
+    .ft-quick-links li a {
+        padding: 8px 15px;
+        font-size: 13px;
+        color: #959595;
+        background: #202020;
+        text-decoration: none;
+        margin-bottom: 30px;
+    }
+
+        .ft-quick-links li a:hover {
+            background: #171717;
+        }
+
+.footer-btm-wrapp {
+    width: 100%;
+    display: table;
+    background: #1b1b1b;
+}
+
+.ft-btm-left {
+    float: left;
+}
+
+    .ft-btm-left ul li {
+        float: left;
+        margin-right: 40px;
+    }
+
+        .ft-btm-left ul li a {
+            font-size: 12px;
+            color: #5f5f5f;
+        }
+
+            .ft-btm-left ul li a:hover {
+                text-decoration: none;
+            }
+
+.footer-btm-wrapp .wrapper {
+    padding: 20px 0px;
+}
+
+.ft-social {
+    margin-left: 5em;
+}
+
+.ft-social ul li {
+    float: left;
+    padding-right: 20px;
+    list-style: none;
+}
+
+.footer-btm-wrapp .wrapper {
+    padding: 8px 0px;
+    list-style: none;
+}
+
+
+.copy-rights p {
+    color: #959595;
+    font-size: 13px;
+    list-style: none;
+    margin-top: -40px;
+    padding: 60px 20px 10px;
+    float: right 10px;
+    text-align: right;
+    list-style: none;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.ft-lines {
+    font-size: 12px;
+    margin-top: 110px;
+}
+
+    .ft-lines li {
+        list-style: none;
+        display: inline;
+        margin: 0 10px 0 10px;
+    }
+
+    .ft-lines a {
+        text-decoration: none;
+        color: #959595;
+    }
+
+        .ft-lines a:hover {
+            text-decoration: underline;
+        }
