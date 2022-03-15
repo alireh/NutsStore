@@ -12,6 +12,9 @@ using Microsoft.AspNetCore.Http;
 using JavaScriptEngineSwitcher.V8;
 using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
 using React.AspNet;
+using Microsoft.Extensions.Logging;
+using NutsStore.Models;
+using NutsStore.Util;
 
 namespace NutsStore
 {
@@ -33,6 +36,9 @@ namespace NutsStore
             // Make sure a JS engine is registered, or you will get an error!
             services.AddJsEngineSwitcher(options => options.DefaultEngineName = V8JsEngine.EngineName).AddV8();
             services.AddControllersWithViews();
+            services.AddSession();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            Constant.PasswordPolicy = (PasswordPolicy)Utility.TryGetIntConfig(Configuration, "PasswordPolicy", 1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,12 +82,17 @@ namespace NutsStore
 
             app.UseAuthorization();
 
+            app.UseSession();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            SqliteManager.InitDb();
+            ApiController.ApiController.logger = app.ApplicationServices.GetService<ILogger<ApiController.ApiController>>();
+            SqliteManager.logger = app.ApplicationServices.GetService<ILogger<SqliteManager>>();
         }
     }
 }
