@@ -1,0 +1,11 @@
+﻿.resetpass-panel {
+    direction: rtl;
+    font-family: "Lato", sans-serif;
+    color: #4A4A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,49 @@
+﻿@model NutsStore.Models.UserInfo
+
+@{
+    Layout = "~/Views/Layout.cshtml";
+    var genderIndex = Model.Gender == true ? 0 : 1;
+}
+<div class="register-panel">
+    <div id="bg"></div>
+    <div class="form">
+        <h5 class="title">ویرایش کاربر</h5>
+        <div class="form-field">
+            <input type="text" placeholder="نام کاربری" value="@Model.Username" />
+        </div>
+
+        <div class="form-field">
+            <input type="text" placeholder="نام"  value="@Model.Firstname" />
+        </div>
+
+        <div class="form-field">
+            <input type="text" placeholder="نام خانوادگی"  value="@Model.Lastname" />
+        </div>
+
+        <div class="form-field">
+            <input type="email" placeholder="ایمیل"  value="@Model.Email" />
+        </div>
+
+        <div class="form-field">
+            <input type="text" placeholder="نشانی"  value="@Model.Address" />
+        </div>
+
+        <div class="form-field">
+            <section>
+                <div class="gender-label">جنسیت</div>
+                <select class="select-gender"  value="@genderIndex">
+                    <option value="0">مرد</option>
+                    <option value="1">زن</option>
+                </select>
+            </section>
+        </div>
+
+        <div class="form-field">
+            <input type="text" placeholder="شماره تلفن" value="@Model.PhoneNumber" />
+        </div>
+
+        <div class="form-field">
+            <button class="btn" type="submit">ویرایش</button>
+        </div>
+    </div>
+</div>

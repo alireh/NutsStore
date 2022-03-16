@@ -1,0 +1,39 @@
+﻿@model NutsStore.Models.ResponseModel
+
+@{
+    Layout = "~/Views/Layout.cshtml";
+    var message = "خطایی رخ داده است";
+    var code = Model.status;
+}
+
+<script>
+    function goToMainPage() {
+        var root = location.protocol + '//' + location.host;
+        window.location.href = root;
+    }
+</script>
+
+@{
+    switch (Model.status)
+    {
+        case 401:
+            message = "شما دسترسی لازم به این صفحه را ندارید";
+            break;
+        case 403:
+            message = "شما مجوز انجام این عملیات را ندارید";
+            break;
+        case 404:
+            message = "صفحه یافت نشد";
+            break;
+        case 500:
+            message = "خطایی در سرور رخ داده است";
+            break;
+    }
+}
+<div class="error-panel error-msg">
+    <span>
+        <h1>@code</h1>
+        <p>@message</p>
+        <button onclick="goToMainPage()">بازگشت به صفحه اصلی</button>
+    </span>
+</div>
